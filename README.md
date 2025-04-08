@@ -1,4 +1,4 @@
-# 🕹️ The Adventure - Retro Game Remake with Raspberry Pi Pico Controller
+# 🕹️ The Adventure - Retro Game Remake with Raspberry Pi Pico Controller (based on The Adventure from Atari 2600 from '80)
 
 This project is a Python-based remake of the classic retro game **"The Adventure"**, playable with a **custom-built controller** using a **Raspberry Pi Pico**, joystick, and two buttons.
 
@@ -25,16 +25,32 @@ This project is a Python-based remake of the classic retro game **"The Adventure
 - Optional: 3D-printed or custom-built controller enclosure
 
 ---
+## 🛠️ How to Run
 
-## 🛠️ TODO
+### 🎮 1. Download the Game  
+Clone or download the game executable:  
+```bash  
+git clone https://github.com/QadamosssQ/TheAdventureGame/releases/download/Release/TheAdventureGame.exe  
+```  
 
-### Adamoss:
-- create scheme for controller
-- create code for controller
-- assembly controler irl
+### 🧠 2. Set Up the Raspberry Pi Pico Controller  
+#### a. Flash CircuitPython  
+Download CircuitPython for your Pico:  
+[Download UF2](https://downloads.circuitpython.org/bin/raspberry_pi_pico_w/pl/adafruit-circuitpython-raspberry_pi_pico_w-pl-9.2.7.uf2)  
+- Plug in your Pico while holding the **BOOTSEL** button.  
+- Copy the `.uf2` file to the Pico's memory.  
 
-### Fajerancik:
-- make game in python
-- create main menu (start, exit)
-- create movement
-- create 1 lv (boxes and trigger zones for next locations)
+#### b. Install Adafruit HID Library  
+- Download the `adafruit_hid` library from the [Adafruit Bundle](https://circuitpython.org/libraries).  
+- Copy the `adafruit_hid` folder into the `/lib` directory on your Pico.  
+
+#### c. Upload Controller Code  
+- Copy your custom controller code and place it in the root directory of the Pico.  
+- Make sure it's named `code.py` (CircuitPython will auto-run this).
+
+### 🕹️ 3. Connect and Play  
+- Plug the Pico into your PC via USB.  
+- It should be recognized as a USB gamepad.  
+- Launch `TheAdventureGame.exe` and start playing!
+
+---
