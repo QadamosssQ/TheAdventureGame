@@ -10,7 +10,7 @@ This project is a Python-based remake of the classic retro game **"The Adventure
 - 🧠 Built with Python and Arduino IDE
 - 🕹️ Custom controller using Raspberry Pi Pico:
   - 1x Analog Joystick (for movement)
-  - 2x Buttons (for actions like attack, interact, or jump)
+  - 2x Buttons for interactions
 - 🔌 USB HID support: Pico acts as a gamepad for your PC
 - 💾 Open source and easy to expand
 
@@ -54,3 +54,12 @@ Download CircuitPython for your Pico:
 - Launch `TheAdventureGame.exe` and start playing!
 
 ---
+
+
+
+## 🔧 TODO
+- expand levels
+- improve data reading from joystick (little bugs)
+- create sheme and real pcb for controller
+- make 3d case for controller
+
