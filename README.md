@@ -1,6 +1,8 @@
-# 🕹️ The Adventure - Retro Game Remake with Raspberry Pi Pico Controller (based on The Adventure from Atari 2600 from '80)
+# 🕹️ The Adventure - Retro Game Remake with Raspberry Pi Pico Controller 
 
 This project is a Python-based remake of the classic retro game **"The Adventure"**, playable with a **custom-built controller** using a **Raspberry Pi Pico**, joystick, and two buttons.
+
+This game was inspired by [The Adventure from Atari 2600 from '80](https://en.wikipedia.org/wiki/Adventure_(1980_video_game))
 
 ---
 
@@ -50,16 +52,8 @@ Download CircuitPython for your Pico:
 
 ### 🕹️ 3. Connect and Play  
 - Plug the Pico into your PC via USB.  
-- It should be recognized as a USB gamepad.  
 - Launch `TheAdventureGame.exe` and start playing!
 
 ---
-
-
-
-## 🔧 TODO
-- expand levels
-- improve data reading from joystick (little bugs)
-- create sheme and real pcb for controller
-- make 3d case for controller
+MSAdamoss & [Fajerancik](https://github.com/Fajerancik)
 
